@@ -6,6 +6,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,33 +23,44 @@ class MessengerScreen extends StatelessWidget {
         title: Text('Messenger'),
         backgroundColor: Colors.blue[400],
         elevation: 0,
-        actions: [
-          IconButton(
-            icon: Icon(Icons.home),
-            onPressed: () {},
-          ),
-        ],
       ),
       body: ListView(
         children: <Widget>[
           buildConversationTile(
             'Yen Nhi',
-            'Hi!!!',
-            '9:00 am',
+            'ok??',
+            '9:27 am',
             'meo1.jpeg',
           ),
           buildConversationTile(
             'Thanh Truc',
-            '???',
+            'Hi bae!!',
             '9:10 am',
             'meo2.jpeg',
           ),
-
           buildConversationTile(
             'Thanh Tuyen',
-            'Hey bae!',
-            '7:50pm',
+            'Yep',
+            '8:07 am',
             'meo3.jpeg',
+          ),
+          buildConversationTile(
+            'Long Phu',
+            'You sent a sticker.',
+            'Mon',
+            'meo1.jpeg',
+          ),
+          buildConversationTile(
+            'Duc Tien',
+            'Ok?',
+            'Mon',
+            'meo1.jpeg',
+          ),
+          buildConversationTile(
+            'Mom',
+            '?',
+            'Sun',
+            'meo3.jpeg.jpg',
           ),
         ],
       ),
@@ -89,6 +101,3 @@ class MessengerScreen extends StatelessWidget {
     );
   }
 }
-
-
-
